@@ -13,6 +13,7 @@ SignupForm.addEventListener('submit',(e)=>{
   .then((userCredential) => {
     const user = userCredential.user;
     console.log(user);
+    window.location = 'login.html'
   })
   .catch((error) => {
     const errorCode = error.code;
